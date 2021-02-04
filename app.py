@@ -15,6 +15,10 @@ sys.path.append(os.path.join(os.getcwd(),".."))
 # print(os.path.join(os.getcwd(),"..","utilties"))
 import pandas as pd
 # from utilities.trim_utilities import is_start,is_end,parse_data
+try:
+    from .trim_utilities import *
+except Exception as e:
+    from trim_utilities import *
 
 #DATA_PATH = os.path.join(os.getcwd(),"..","data")
 MIN_CYCLE = 5
