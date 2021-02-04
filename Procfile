@@ -1,2 +1,2 @@
-web: python visualization/explore_data.py
+web: python explore_data.py
 
