@@ -1,2 +1,1 @@
-web: python explore_data.py
-
+web: gunicorn app:server
