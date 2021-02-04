@@ -21,9 +21,7 @@ try:
 except Exception as e:
     from trim_utilities import *
 
-# import plotly.io as pio
-# pio.renderers.default = "browser"
-DATA_PATH = os.path.join(os.getcwd(),"..","data")
+#DATA_PATH = os.path.join(os.getcwd(),"..","data")
 MIN_CYCLE = 5
 MIN_MINUTES = 5
 SAMPLE_RATE = 100
@@ -105,9 +103,9 @@ def save_split_data(btn_save,content,filename):
         fname = filename.split(".")[0]
         inc = 1
         for df_small_chunk in df_cut:
-            fname_part = "-".join((fname,str(inc)))+".csv"
-            full_fn = os.path.join(DATA_PATH,fname_part)
-            df_small_chunk.to_csv(full_fn)
+            #fname_part = "-".join((fname,str(inc)))+".csv"
+            #full_fn = os.path.join(DATA_PATH,fname_part)
+            #df_small_chunk.to_csv(full_fn)
             inc+=1
         return "Saved successfully!"
 
